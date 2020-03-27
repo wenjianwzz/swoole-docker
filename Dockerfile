@@ -6,7 +6,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt update && apt upgrade -y && apt
             php7.2-imap php7.2-intl php7.2-mbstring php7.2-zip php-tokenizer php7.2-opcache \
             unzip openssh-client gcc make curl libssl-dev wget composer
 
-ENV Ver 4.4.16
+ENV Ver 4.4.x
 ENV Download_URL https://github.com/swoole/swoole-src/archive/v${Ver}.zip
 
 RUN cd / && wget $Download_URL
