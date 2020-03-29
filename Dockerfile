@@ -18,8 +18,6 @@ RUN cd / && \
     echo "extension=swoole.so" > /etc/php/7.2/cli/conf.d/20-swoole.ini
 
 RUN mkdir /app 
-
 WORKDIR /app/
 USER root
-
 CMD [ "/bin/bash" ]
