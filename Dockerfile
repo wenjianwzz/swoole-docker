@@ -20,4 +20,6 @@ RUN cd / && \
 RUN mkdir /app 
 WORKDIR /app/
 USER root
+
+RUN apt update && apt upgrade -y && apt install -y php-redis
 CMD [ "/bin/bash" ]
