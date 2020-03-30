@@ -18,8 +18,8 @@ RUN cd / && \
     echo "extension=swoole.so" > /etc/php/7.2/cli/conf.d/20-swoole.ini
 
 RUN mkdir /app 
-
 WORKDIR /app/
 USER root
 
+RUN apt update && apt upgrade -y && apt install -y php-redis
 CMD [ "/bin/bash" ]
